@@ -27,4 +27,4 @@ At build time, the **getStaticProps** function inside index.js file will be call
 
 
 ### Performance 
-![](images.Performance.png)
+![](images/Performance.PNG)
