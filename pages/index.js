@@ -28,7 +28,7 @@ export default function Home(props) {
     launch_year,
   }) => {
     const res = await fetch(
-      `${API_URL}?limit=10&launch_success=${launch_success}&land_success=${land_success}&launch_year=${launch_year}`
+      `${API_URL}?limit=100&launch_success=${launch_success}&land_success=${land_success}&launch_year=${launch_year}`
     );
     return await res.json();
   };
@@ -102,7 +102,7 @@ export default function Home(props) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`${API_URL}?limit=10`);
+  const res = await fetch(`${API_URL}?limit=100`);
   const launchData = await res.json();
   return {
     props: {
