@@ -1,0 +1,67 @@
+$theme-colors: (
+  "primary": lightgreen,
+  "secondary": rgb(6, 94, 194),
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 700px,
+  md: 1024px,
+  lg: 1440px,
+);
+
+$grid-gutter-width: 20px;
+@import "~bootstrap/scss/bootstrap.scss";
+html,
+body {
+  padding: 0;
+  margin: auto;
+  overflow: hidden;
+  max-width: 1440px;
+  background-color: #e9ecef !important;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.btn {
+  width: 65px;
+}
+
+.card {
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.center-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 701px) {
+  .launch-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 90vh;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .filter-panel {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 90vh;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container-fluid {
+    height: 95vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
